@@ -1,8 +1,8 @@
 <?php
 
 	$email= 'julioprotzek@gmail.com';
-	$assunto= 'Email enviado pelo PHP';
-	$mensagem= 'Hello World!';
+	$assunto= $_POST['assunto'];
+	$mensagem= $_POST['mensagem'];
 	
 	mail( $email, $assunto, $mensagem );
 
